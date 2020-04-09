@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
-}
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MainApp {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.container {
+  background:white;
+  font-variant-caps: all-petite-caps;
+}
+
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left:  auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left:  10px; /* 3 */
+}
+
+.container-fluid {
+  background-color: #6351ce;
+  border-color: darkblue;
+  color: white
+}
+.mainnavbar {
+  background: white;
+}
+
+.navbar .navbar-brand img {
+  height: 50px;
+}
+
+.navbar .navbar-brand {
+  padding-top: 0;
+}
+
+.navbar .nav-link {
+  color: #444343!important;
+}
+
+.navbar .button-collapse {
+  padding-top: 1px;
+}
+
+.card-intro .card-body {
+  background: #6351ce;
   color: white;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 0 !important;
 }
 
-.App-link {
-  color: #61dafb;
+.card-intro .card-body h1 {
+  margin-bottom: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-intro {
+  margin-top: 64px;
+}
+
+@media (max-width: 450px) {
+  .card-intro {
+    margin-top: 56px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 1441px) {
+  .card-intro {
+    padding-left: 0 !important;
   }
 }
